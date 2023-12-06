@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <form method="get">
+            <label for="username">Enter your username:</label>
+            <input
+                type="text"
+                id="username"
+                placeholder="Input your username"
+                required
+            />
+            <br /><br />
+
+            <label for="user_email">Enter your email:</label>
+            <input type="email" id="user_email" placeholder="email" required/>
+            <br /><br />
+
+            <label for="user_password">Enter your password</label>
+            <input type="password" id="user_password" placeholder="password" required/>
+            <br /><br />
+
+            <p>Select your gender:</p>
+            <input type="radio" id="male" name="gender" />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" />
+            <label for="female">Female</label>
+
+            <input type="radio" id="others" name="gender" />
+            <label for="others">Others</label>
+            <br /><br />
+
+            <label for="questions">Pick one security question: </label>
+            <select name="security_questions" id="questions">
+                <option value="pet name">What is your pet's name?</option>
+                <option value="favorite_color?">
+                    What is your favorite color?
+                </option>
+                <option value="favorite_food?">
+                    What is your favorite food?
+                </option>
+            </select>
+            <br /><br />
+            <label for="answers">Pick one answer: </label>
+            <select name="security_answers" id="answers">
+                <option value="german shephard">German shephard</option>
+                <option value="indigo">Indigo</option>
+                <option value="pizza">Pizza</option>
+            </select>
+            <br /><br />
+
+            <label for="bio">Your bio:</label><br />
+            <textarea
+                name="bio"
+                id="bio"
+                cols="30"
+                rows="3"
+                placeholder="Tell us about yourself"
+            ></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
