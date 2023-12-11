@@ -1,0 +1,109 @@
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./advancedForm.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <main id="main">
+      <h1 id="title">CareerConnects Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+      <form action="#" id="survey-form">
+          <div class="form-class">
+              <label for="name" id="name-label">Name
+                  <input type="text" id="name" class="form_input" placeholder="Enter your name" required>
+              </label>
+          </div>
+          <div class="form-class">
+              <label for="email" id="email-label">Email
+                  <input type="email" id="email" class="form_input" placeholder="Enter your email" required>
+              </label>
+          </div>
+          <div class="form-class">
+              <label for="number" id="number-label">Age
+                  <input type="number" id="number" class="form_input" placeholder="Age" min="1" max="99" required>
+              </label>
+          </div>
+          <div class="form-class">
+              <p>Which option best describes your current role?</p>
+              <select name="dropdown" id="dropdown" class="form_input">
+                  <option value="role" disabled selected>Select your role</option>
+                  <option value="student">Student</option>
+                  <option value="full-time">Full-time</option>
+                  <option value="part-time">Part-time</option>
+                  <option value="null">Prefer not to say</option>
+                  <option value="others">Others</option>
+              </select>
+          </div>
+          <div class="form-class">
+              <p>Would you recommend CareerConnects to a friend?</p>
+              <label>
+                  <input type="radio" value="definitely" name="option" class="form_check">Definitely <br>
+              </label>
+              <label>
+                  <input type="radio" value="maybe" name="option" class="form_check">Maybe <br>
+              </label>
+              <label>
+                  <input type="radio" value="sure" name="option" class="form_check">Sure <br>
+              </label>
+          </div>
+          <div class="form-class">
+              <p>What is your favorite feature of CareerConnects?</p>
+              <select name="dropdown" id="dropdown" class="form_input">
+                  <option value="role" disabled selected>Select your role</option>
+                  <option value="student">Challenges</option>
+                  <option value="full-time">Projects</option>
+                  <option value="part-time">Community</option>
+                  <option value="null">Open Source</option>
+              </select>
+          </div>
+          <div class="form-class">
+              <p>What would you like to see improved? (Check all that apply)</p>
+              <label class="form-class_label" for="front">
+                  <input type="checkbox" class="form_check" value="front" id="front">Front-end Projects
+              </label>
+              <label class="form-class_label" for="back">
+                  <input type="checkbox" class="form_check" value="back" id="back">Back-end Projects
+              </label>
+              <label class="form-class_label" for="data">
+                  <input type="checkbox" class="form_check" value="data" id="data">Data visualization
+              </label>
+              <label class="form-class_label" for="challenges">
+                  <input type="checkbox" class="form_check" value="challenges" id="challenges">challenges
+              </label>
+              <label class="form-class_label" for="open">
+                  <input type="checkbox" class="form_check" value="open" id="open">Open Source Communities
+              </label>
+              <label class="form-class_label" for="gitter">
+                  <input type="checkbox" class="form_check" value="gitter" id="gitter">Gitter help rooms
+              </label>
+              <label class="form-class_label" for="videos">
+                  <input type="checkbox" class="form_check" value="videos" id="videos">Videos
+              </label>
+              <label class="form-class_label" for="meetup">
+                  <input type="checkbox" class="form_check" value="meetup" id="meetup">City Meetups
+              </label>
+              <label class="form-class_label" for="wiki">
+                  <input type="checkbox" class="form_check" value="wiki" id="wiki">Wiki
+              </label>
+              <label class="form-class_label" for="forum">
+                  <input type="checkbox" class="form_check" value="forum" id="forum">Forum
+              </label>
+              <label class="form-class_label" for="courses">
+                  <input type="checkbox" class="form_check" value="courses" id="courses">Additional Courses
+              </label>
+          </div>
+          <div class="form-class">
+              <textarea name="text" id="textarea" cols="30" rows="6" class="form_input" placeholder="Enter your comments here"></textarea>
+          </div>
+          <div class="form-class">
+              <button type="submit" class="form_submit" id="submit">Submit</button>
+              <button type="reset" class="form_reset" id="reset">Reset</button>
+
+          </div>
+      </form>
+  </main>
+</body>
