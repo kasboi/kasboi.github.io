@@ -1,0 +1,116 @@
+/*
+`- Defines the font family that applies to all text
+- padd 
+ */
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+/* 
+  - background-color does bla bla
+  - color does bla bla
+*/
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ccc;
+}
+
+/* SECTION -WELCOME */
+#welcome {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #454545;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #121212;
+}
+
+/* SECTION -FEATURES */
+#features {
+  padding: 50px 0;
+}
+
+.feature {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background-color: teal;
+}
+
+/* CONTACT US */
+#contact {
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgba(50, 205, 50, 0.185);
+}
+
+input {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 30%;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 0 15px;
+  color: #8a97a0;
+  font-size: 16px;
+}
+
+button {
+  background-color: #454545;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 100px;
+
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #121212;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}

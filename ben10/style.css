@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  background-color: #728308;
+  padding: 20px 0;
+  text-align: center;
+  /* POSITION */
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+header h1 {
+  color: #fff;
+  border: 8px solid #fff;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 36px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.welcome {
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+
+.welcome h2 {
+  color: #fff;
+  font-size: 70px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.welcome h2 span {
+  font-size: 120px;
+}
+
+/* NAVIGATION BAR */
+nav {
+  background-color: #f4f4f4;
+  padding: 25px;
+  position: sticky;
+  top: 100px;
+  z-index: 2;
+}
+
+nav ul {
+  list-style-type: none;
+  white-space: nowrap;
+  /* display: flex;
+  justify-content: space-around; */
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  width: 25%;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+nav li a.join {
+  color: #728308;
+}
+
+nav li a:hover {
+  color: #728308;
+  text-decoration: underline;
+}
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./survey.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1 id="title">CareerConnects Survey Form</h1>
+                <p id="description">
+                    Thank you for taking the time to help us improve the plaform
+                </p>
+            </header>
+            <form id="survey-form">
+                <!-- Name Input -->
+                <div class="form-class">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        class="form_input"
+                        placeholder="Enter your name"
+                        required
+                    />
+                </div>
+                <!-- Email Input -->
+                <div class="form-class">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        class="form_input"
+                        placeholder="Enter your email"
+                        required
+                    />
+                </div>
+                <!-- Age [minimum of 18 and maximum of 75] -->
+                <div class="form-class">
+                    <label for="age">Age</label>
+                    <input
+                        type="number"
+                        id="age"
+                        class="form_input"
+                        placeholder="Input your age"
+                        min="18"
+                        max="75"
+                        required
+                    />
+                </div>
+                <!-- Dropdwon menu -->
+                <div class="form-class">
+                    <p>Which option best describes your current role?</p>
+                    <select name="dropdwon" id="dropdown" class="form_input">
+                        <option value="role" disabled selected>
+                            Select your role
+                        </option>
+                        <option value="student">Student</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <!-- Radio Buttons -->
+                <div class="form-class">
+                    <p>Would you recommend CareerConnects to a friend?</p>
+                    <input
+                        type="radio"
+                        value="definitely"
+                        name="option"
+                        id="definitely"
+                        class="form_radio"
+                    />
+                    <label for="definitely">Definitely</label>
+                    <!-- Break line -->
+                    <br />
+                    <input
+                        type="radio"
+                        value="maybe"
+                        name="option"
+                        id="maybe"
+                        class="form_radio"
+                    />
+                    <label for="maybe">Maybe</label>
+                    <!-- Break line -->
+                    <br />
+                    <input
+                        type="radio"
+                        value="nah"
+                        name="option"
+                        id="nah"
+                        class="form_radio"
+                    />
+                    <label for="nah">Nah</label>
+                </div>
+                <!-- Dropdown -->
+                <div class="form-class">
+                    <p>What is your favourite feature of CareerConnects?</p>
+                    <select name="dropdown" id="dropdown" class="form_input">
+                        <option value="role" disabled selected>Pick one</option>
+                        <option value="challenges">challenges</option>
+                        <option value="projects">projects</option>
+                        <option value="community">community</option>
+                        <option value="open-source">open source</option>
+                    </select>
+                </div>
+                <!-- Checkbox -->
+                <div class="form-class">
+                    <p>
+                        What would you like to see improved? (Check all that
+                        apply)
+                    </p>
+                    <label for="front" class="form-class_label">
+                        <input
+                            type="checkbox"
+                            id="front"
+                            class="form_check"
+                            value="front"
+                        />
+                        Front-end Projects
+                    </label>
+                    <label for="back" class="form-class_label">
+                        <input
+                            type="checkbox"
+                            id="back"
+                            class="form_check"
+                            value="back"
+                        />
+                        Back-end Projects
+                    </label>
+                    <label for="data" class="form-class_label">
+                        <input
+                            type="checkbox"
+                            class="form_check"
+                            value="data"
+                            id="data"
+                        />
+                        Data Visualization
+                    </label>
+                    <label for="challenges" class="form-class_label">
+                        <input
+                            type="checkbox"
+                            class="form_check"
+                            value="challenges"
+                            id="challenges"
+                        />
+                        Challenges
+                    </label>
+                    <label for="open" class="form-class_label">
+                        <input
+                            type="checkbox"
+                            class="form_check"
+                            value="open"
+                            id="open"
+                        />
+                        Open Source Communities
+                    </label>
+                </div>
+                <!-- Textarea input -->
+                <div class="form-class">
+                    <textarea
+                        name="text"
+                        id="textarea"
+                        cols="30"
+                        rows="6"
+                        class="form_input"
+                        placeholder="Enter your comments here"
+                    ></textarea>
+                </div>
+                <!-- Submit & Reset buttons -->
+                <div class="form-class">
+                    <input type="submit" value="Submit" class="form_submit" />
+                    <input type="reset" value="Reset" class="form_reset" />
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
